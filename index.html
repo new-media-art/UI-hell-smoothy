@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Eater&family=Nosifer&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+    <title>UI HELL</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Smoothy Hell</h1>
+          <p id="subtitle">in CODERS.BAY VIENNA</p>
+        </div>
+      </div>
+      <div class="expander"></div>
+      <hr />
+      <form id="form">
+        <div class="expander"></div>
+        <h1   class="cadaver randomMove1">
+          Create a Smoothy! <span id="ifYouDare">If you dare! Ja, Ja, Ja!</span>
+        </h1>
+        <div class="expander"></div>
+        <br>
+        <section class="milk">
+          <label class="fruity randomMove2" for="soja"
+            >What type of <span id="fluid">fluid</span> would you like?</label
+          >
+          <input type="text" name="soja" id="soja" />
+        </section>
+        <div class="expander"></div>
+        <hr />
+
+        <p class="popup1"></p>
+
+        <section class="cadaver randomMove3">
+          <label for="amount"
+            >What type of <span id="cadaver">cadaver</span> would you
+            like?</label
+          >
+          <input type="number" name="amount" id="amount" />
+        </section>
+        <div class="expander"></div>
+        <hr />
+
+        <section class="cooked randomMove4">
+          <label for="doneness">How do you want your "toppings"?</label>
+          <br />
+          <div class="expander"></div>
+          <span id="alive">Alive</span>
+          <input
+            type="range"
+            name="doneness"
+            id="doneness"
+            value="3"
+            min="1"
+            max="5"
+          />
+          <span id="bloody">A Bloody Mess</span>
+        </section>
+        <div id="expander"></div>
+        <hr />
+        <p class="popup2"></p>
+        <section class="extras randomMove5" onmouseover="style.color='red'"
+                 onmouseout="style.color='red'">
+          <span>What extras would you like?</span>
+          <br />
+          <input type="checkbox" name="topping" id="mango" value="mango" />
+          <label for="mango">mango</label>
+          <input
+            type="checkbox"
+            name="topping"
+            id="pineapple"
+            value="pineapple"
+          />
+          <label for="pineapple">pineapple</label>
+          <input type="checkbox" name="topping" id="orange" value="orange" />
+          <label for="orange">worms</label>
+        </section>
+        <hr />
+        <div class="expander"></div>
+
+        <section class="fruity randomMove6">
+          <span id="koala" onmouseover="mOver(this)" onmouseout="mOut(this)" >Would you like to add a super tender baby koala????</span>
+
+          <br />
+          <div class="expander"></div>
+          <input type="radio" name="honey" id="yes" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="honey" id="no" value="yes" />
+          <label for="no">No</label>
+        </section>
+
+        <hr />
+        <div class="expander"></div>
+        <div>
+          <button id="animate" onclick="myMove()">Click Me</button>
+        </div>
+        <div class="expander"></div>
+        <section class="bun-type randomMove7">
+          <label for="bun"
+            >What type of <span id="extras-span">extras</span>would you
+            like?</label
+          >
+          <select name="bun" id="bun">
+            <option value="blueberries">blueberries</option>
+            <option value="maracuya">maracuya</option>
+            <option value="guava">guava</option>
+          </select>
+        </section>
+        <hr />
+        <div class="expander"></div>
+
+        <section class="sauce-selection randomMove8">
+          <label for="sauce"
+            >What type of <span id="sauce-span">sauce</span> would you
+            like?</label
+          >
+          <input list="sauces" id="sauce" name="sauce" />
+          <datalist id="sauces">
+            <option value="horseradish"></option>
+            <option value="insect blood"></option>
+            <option value="soy souce"></option>
+          </datalist>
+        </section>
+        <hr />
+        <div class="expander"></div>
+        <section class="cadaver randomMove9">
+          <label class="cadaver">Anything else you want to add?</label>
+          <br />
+          <p id="demo"></p>
+          <textarea
+            id="myInput"
+            oninput="myFunction()"
+            name="extra"
+            rows="3"
+            cols="40"
+          ></textarea>
+        </section>
+
+        <div class="expander"></div>
+        <hr />
+
+        <section class="submission randomMove10">
+          <a href="submitHELL.html">
+            <button type="button">submit</button>
+          </a>
+        </section>
+        <div class="expander"></div>
+        <br />
+      </form>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
